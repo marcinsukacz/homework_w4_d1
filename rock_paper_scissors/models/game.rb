@@ -13,6 +13,8 @@ class Game
       return "scissors"
     elsif @entry1 == "rock" && @entry2 == "scissors" || @entry1 == "scissors" && @entry2 == "rock"
       return "rock"
+    elsif @entry1 == @entry2
+      return "No winner, it's a draw"      
     else
       return "There's something wrong with the input"
     end
